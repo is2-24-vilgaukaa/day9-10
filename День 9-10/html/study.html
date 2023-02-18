@@ -1,0 +1,151 @@
+<html>
+<head>
+<title>День 9-10</title>
+<link rel="icon" href="../picture/logo.svg">
+<link rel="stylesheet" type="text/css" href="../style/style.css">
+<link rel="stylesheet" type="text/css" href="../style/style2.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Sofia+Sans+Semi+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="preloader">
+<div class="preloader__row">
+<div class="preloader__item"></div>
+<div class="preloader__item"></div>
+</div>
+</div>
+<script src="../script/scriptpreloader.js"></script>
+
+<img id="avatar" src="../picture/avatar.svg" >
+<script src="../script/script.js"></script>
+
+<nav class="mainmenu">
+<img src="../picture/logo.svg"> <br>
+<a href="../index.html">Главная</a>
+<a href="../html/about _us.html">О нас</a>
+<a href="../html/study.html">Учеба</a>
+<a href="../html/interesting.html">Интересные моменты</a>
+</nav>
+
+<br> 
+
+<div class="list">
+<br>
+<button class = "minigame" onclick="student()">Найти студента</button>
+<br><br> 
+</div>
+
+<br> 
+
+<script>
+function student() {
+let arr = ['Студент на паре', 'Студент хомячит на последней парте', 
+'Студент спит дома', 'Студент пропал без вести', 'Студент заболел'];
+let rand = Math.floor(Math.random() * arr.length);
+alert(arr[rand]);
+}
+</script>
+
+<div class="fon">
+<br>
+<h1>Пары проходят просто на отлично</h1>
+<p><b>Вот например чем мы занимаемся:</b></p> 
+
+<section id="slider_bl">
+<div class="wrapper">
+<input checked type=radio name="slider" id="slide1" />
+<input type=radio name="slider" id="slide2" />
+<input type=radio name="slider" id="slide3" />
+<input type=radio name="slider" id="slide4" />
+<div class="slider-wrapper">
+<div class=inner>
+    
+<article>
+<div class="info bottom-right">
+<h3>на граф дизайне</h3></div>
+<img class = "fotoslide" src="../picture/img12.jpg"/>
+</article>
+    
+<article>
+<div class="info bottom-right">
+<h3>на кс</h3></div>
+<img class = "fotoslide" src="../picture/img13.jpg"/>
+</article>
+    
+<article>
+<div class="info bottom-right">
+<h3>на оп</h3></div>
+<img class = "fotoslide" src="../picture/img14.jpg"/>
+</article>
+    
+<article>
+<div class="info bottom-right">
+<h3>на архитектуре</h3></div>
+<img class = "fotoslide" src="../picture/img15.jpg"/>
+</article>
+  
+</div>
+</div>
+
+<div class="slider-prev-next-control">
+<label for=slide1></label>
+<label for=slide2></label>
+<label for=slide3></label>
+<label for=slide4></label>
+</div>
+    
+<div class="slider-dot-control">
+<label for=slide1></label>
+<label for=slide2></label>
+<label for=slide3></label>
+<label for=slide4></label>
+</div>
+</div>
+</section>
+<br><br>
+</div>
+
+<h1>Мы очень старательно ведем конспекты и бережно храним их</h1>
+
+<div class="about_us">
+<br>
+<p><b>Вот доказательства!</b></p> 
+<img class="fotosmile" src="../picture/img16.jpg">
+<img class="fotosmile" src="../picture/img17.jpg">
+<img class="fotosmile" src="../picture/img18.jpg">
+<br><br>
+</div>
+
+<br><br>
+
+<div class="about_us">
+<br>
+<table>
+<tr>
+<td class="td"><p><b>А вообще, учиться нужно.
+Ведь нужно потом как-то на хлебушек зарабатывать.</b></p></td>
+<td><img class="foto" src="../picture/img19.jpg"></td>
+</tr>
+</table>
+<br>
+</div>
+
+<br>
+
+<nav class="mainmenu">
+<img src="../picture/logo.svg"> <br>
+<a href="../index.html">Главная</a>
+<a href="../html/about _us.html">О нас</a>
+<a href="../html/study.html">Наше обучение</a>
+<a href="../html/interesting.html">Интересные моменты</a>
+<p class="footer"><b>Если вы хотите больше узнать о нас, 
+то вам нужно лично с нами встретиться, ведь мы незабываемая группа)</b></p> 
+</nav>  
+
+<div class="end">
+<img class="fotoend" src="../picture/end.svg"> 
+</div>
+</body>
+</html>

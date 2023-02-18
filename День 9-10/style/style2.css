@@ -1,0 +1,231 @@
+#slider_bl .wrapper /*размер картинок*/
+{
+max-width: 450px;
+margin:1em auto; /*расположение по центру*/
+position:relative; /*относительное позиционирование переключателей*/
+}
+
+#slider_bl input /*кружочки снизу*/
+{
+display:none;
+}
+
+#slider_bl .inner /*размер картинок*/
+{
+width:500%;
+}
+
+#slider_bl article
+{
+width:20%;
+float:left; /*компановка элемента слева*/
+position:relative;
+}
+
+#slider_bl article img /*размер картинок*/
+{
+width:100%
+}
+
+#slider_bl .slider-prev-next-control /*расположение переключателей*/
+{
+height:50px;
+position:absolute;
+top:50%;
+width:100%;
+}
+
+#slider_bl .slider-prev-next-control label /*темный фон переключателей*/
+{
+display:none;
+width:40px;
+height:40px;
+border-radius:50%;
+background:rgb(0, 0, 0);
+opacity:.7;
+}
+
+#slider_bl .slider-dot-control /*расположение кружочков в центре снизу*/
+{
+position:absolute;
+width:100%;
+bottom:0;
+text-align:center;
+}
+
+#slider_bl .info /*названия на картинках*/
+{
+position:absolute;
+text-align:left;
+}
+
+#slider_bl .info h3 /*стиль текста названий*/
+{
+color:#ffffff;
+margin:0 0 5px;
+font-weight:400;
+font-size:20px;
+text-shadow: 1px 1px 2px rgb(0, 0, 0);
+font-family: Bookman old style;
+}
+
+#slider_bl .info.bottom-right /*расположение названия снизу*/
+{
+bottom:30px;
+right:30px;
+}
+
+#slider_bl .slider-wrapper
+{
+overflow:hidden; /*скрываем все картинки кроме первой*/
+border-radius:5px; /*закругление картинок*/
+}
+
+#slider_bl .slider-wrapper .inner /*плавное переключение картинок*/
+{
+-webkit-transform:translateZ(0);
+-moz-transform:translateZ(0);
+-ms-transform:translateZ(0);
+-o-transform:translateZ(0);
+transform:translateZ(0);
+-webkit-transition:all .8s cubic-bezier(.77,0,.175,1);
+-moz-transition:all .8s cubic-bezier(.77,0,.175,1);
+transition:all .8s cubic-bezier(.77,0,.175,1);
+}
+
+/*отображение переключателей на всех страницах*/
+#slider_bl 
+#slide1:checked~.slider-prev-next-control label:nth-child(2)::after,
+#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(5)::after,
+#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(1)::after,
+#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(3)::after,
+#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(2)::after,
+#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(4)::after,
+#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(3)::after,
+#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(5)::after,
+#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(1)::after,
+#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(4)::after
+
+
+/*отображение переключателей на всех страницах*/
+#slider_bl
+#slide1:checked~.slider-prev-next-control label:nth-child(2)::after,
+#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(3)::after,
+#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(4)::after,
+#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(5)::after,
+#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(1)::after
+{
+/*стиль переключателей*/
+content:"\f105";
+padding-left:15px;
+}
+
+/*отображение переключателей на всех страницах*/
+#slider_bl 
+#slide1:checked~.slider-prev-next-control label:nth-child(2),
+#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(3),
+#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(4),
+#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(5),
+#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(1)
+{
+/*стиль переключателей*/
+display:block;
+float:right;
+margin-right:5px;
+}
+
+/*отображение переключателей на всех страницах*/
+#slider_bl 
+#slide1:checked~.slider-prev-next-control label:nth-child(5),
+#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(1),
+#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(2),
+#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(3),
+#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(4)
+{
+/*стиль переключателей*/
+display:block;
+float:left;
+margin-left:5px;
+}
+
+/*отображение переключателей на всех страницах*/
+#slider_bl 
+#slide1:checked~.slider-prev-next-control label:nth-child(5)::after,
+#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(1)::after,
+#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(2)::after,
+#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(3)::after,
+#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(4)::after
+{
+/*стиль переключателей*/
+content:"\f104";
+padding-left:8px;
+}
+
+/*отображение переключателей на всех страницах*/
+#slider_bl 
+#slide1:checked~.slider-dot-control label:nth-child(1),
+#slider_bl #slide2:checked~.slider-dot-control label:nth-child(2),
+#slider_bl #slide3:checked~.slider-dot-control label:nth-child(3),
+#slider_bl #slide4:checked~.slider-dot-control label:nth-child(4),
+#slider_bl #slide5:checked~.slider-dot-control label:nth-child(5)
+{
+/*стиль переключателей*/
+background:#333;
+}
+
+/*отображение переключателей на всех страницах*/
+#slider_bl 
+#slide1:checked~.slider-wrapper article:nth-child(1) .info,
+#slider_bl #slide2:checked~.slider-wrapper article:nth-child(2) .info,
+#slider_bl #slide3:checked~.slider-wrapper article:nth-child(3) .info,
+#slider_bl #slide4:checked~.slider-wrapper article:nth-child(4) .info,
+#slider_bl #slide5:checked~.slider-wrapper article:nth-child(5) .info
+{
+/*стиль переключателей*/
+opacity:1;
+}
+
+/*отображение переключателей на всех страницах*/
+#slider_bl 
+#slide1:checked~.slider-wrapper .inner
+{
+/*стиль переключателей*/
+margin-left:0;
+}
+
+/*отображение переключателей на всех страницах*/
+#slider_bl 
+#slide2:checked~.slider-wrapper .inner
+{
+/*стиль переключателей*/
+margin-left:-100%;
+}
+
+/*отображение переключателей на всех страницах*/
+#slider_bl 
+#slide3:checked~.slider-wrapper .inner
+{
+/*стиль переключателей*/
+margin-left:-200%
+}
+
+/*отображение переключателей на всех страницах*/
+#slider_bl
+#slide4:checked~.slider-wrapper .inner
+{
+/*стиль переключателей*/
+margin-left:-300%
+}
+
+/*отображение переключателей на всех страницах*/
+#slider_bl #slide5:checked~.slider-wrapper .inner
+{
+/*стиль переключателей*/
+margin-left:-400%
+}
+
+.fon /*фоновое изображение блока*/
+{
+background: url(../picture/fon.jpg);
+background-size: 100%;
+}
